@@ -8,10 +8,10 @@ This is a step-by-step g uide for installing the project.
 Use the following command to clone the repository to your machine and edit environment variables in the `.env` file.
 
 ```bash
-git clone https://github.com/nvminh461/nodeJs.git
+git clone https://github.com/nvminh461/cannatrek-demo.git
 ```
 
-Edit environment variables in the `.env` file.
+Copy and edit environment variables in the `.env` file.
 
 ### Step 2: Install Dependencies
 
