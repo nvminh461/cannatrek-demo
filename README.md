@@ -18,7 +18,7 @@ Copy and edit environment variables in the `.env` file.
 Firstly, you need to install the dependencies for the frontend application. To do this, navigate to the `nodeJs` directory and run the following command:
 
 ```bash
-cd nodeJs
+cd cannatrek-demo
 npm install
 ```
 ### Step 3: Run the Application

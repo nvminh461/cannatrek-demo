@@ -1,6 +1,4 @@
 const logger = require('../middlewares/logger');
-const axios = require('axios');
-const dotenv = require('dotenv').config();
 const apiBigcommerce = require('../helpers/api-bigcommerce');
 
 class productController {
