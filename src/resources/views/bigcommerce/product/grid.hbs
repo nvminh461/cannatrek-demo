@@ -2,16 +2,32 @@
 <table class="table">
     <thead>
     <tr>
+        <th scope="col">#</th>
         <th scope="col">Name</th>
         <th scope="col">Description</th>
+        <th scope="col">Price</th>
+        <th scope="col">Type</th>
+        <th scope="col">Weight</th>
+        <th scope="col">Actions</th>
     </tr>
     </thead>
     <tbody>
     {{#each products}}
         <tr>
+            <th scope="row">{{this.id}}</th>
             <td>{{this.name}}</td>
-            <td>{{this.description}}</td>
+            <td>{{{this.description}}}</td>
+            <td>{{this.price}}</td>
+            <td>{{this.type}}</td>
+            <td>{{this.weight}}</td>
+            <td>
+                <a href="/product/{{this.id}}/edit" class="btn btn-primary">Edit</a>
+                <a href="#" class="btn btn-danger" data-toggle="modal"
+                   data-target="#confirmDeleteModal"
+                   data-id="{{this.id}}">Delete</a>
+            </td>
         </tr>
     {{/each}}
     </tbody>
 </table>
+{{> modal/confirm-delete}}

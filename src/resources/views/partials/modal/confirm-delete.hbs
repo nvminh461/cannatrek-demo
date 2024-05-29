@@ -29,7 +29,7 @@
         $('#confirmDeleteModal').on('show.bs.modal', function (event) {
             const button = $(event.relatedTarget);
             id = button.data('id');
-            deleteForm.action = '/{{entity}}/' + id + '?_method=DELETE';
+            deleteForm.action = '/{{entity}}/' + id + '/delete?_method=DELETE';
         });
 
         $('#confirmDelete').on('click', function () {
